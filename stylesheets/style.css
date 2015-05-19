@@ -16,6 +16,10 @@ a {
     width: 960px;
 }
 
+.mobile .container {
+    width: 100%;
+}
+
 /*==================
     Heaader
 ==================*/
@@ -28,8 +32,32 @@ a {
     display: none;
 }
 
+.mobile #menu-toggle {
+    color: #fff;
+    display: block;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    text-align: center;
+}
+
 #navigation {
     background-color: #263692;
+}
+
+.mobile #navigation {
+    text-align: center;
+}
+
+.mobile #navigation .active {
+    background-color: #F26722;
+}
+
+.mobile #navigation a {
+    color: #fff;
+    display: block;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    padding: 1rem 0;
 }
 
 #main-menu {
@@ -37,8 +65,19 @@ a {
     text-align: center;
 }
 
+.mobile #main-menu {
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+
 #main-menu li {
     display: inline-block;
+}
+
+.mobile #main-menu li {
+    display: block;
+    text-align: center;
 }
 
 #main-menu li a {
@@ -54,10 +93,23 @@ a {
     margin-bottom: 3rem;
 }
 
+.mobile #main {
+    margin-bottom: 1rem;
+    padding: 0 1rem;
+}
+
 #banner {
     border-bottom: 3px solid #eee;
     position: relative;
     top: -16px;
+}
+
+.mobile #banner {
+    border-bottom: none;
+}
+
+.mobile #banner {
+    top: 0;
 }
 
 #banner img {
@@ -74,13 +126,35 @@ a {
     width: 33%;
 }
 
+.mobile .banner-content {
+    background-color: #fff;
+    position: relative;
+    width: 100%;
+}
+
+.mobile .banner-content h2, .mobile #content h2 {
+    color: #F26722;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
 .banner-content h2, .banner-content p {
     padding: 0 2rem;
+}
+
+.mobile .banner-content h2, .mobile .banner-content p {
+    padding: 0 1rem;
 }
 
 #content {
     float: left;
     width: 66%;
+}
+
+.mobile #content {
+    float: none;
+    padding: 0 1rem;
+    width: 100%;
 }
 
 #content h2 {
@@ -97,6 +171,15 @@ a {
     width: 33%;
 }
 
+.mobile #sidebar {
+    float: none;
+    width: 100%;
+}
+
+.mobile #sidebar p {
+    color: #fff;
+}
+
 #sidebar a {
     color: #F26722;
     float: right;
@@ -106,6 +189,25 @@ a {
 #news {
     color: #fff;
     padding: 0 1em;
+}
+
+.mobile #news {
+    padding: 0 1rem 2rem 1rem;
+}
+
+.mobile #news h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    padding-top: .5rem;
+}
+
+.mobile  h2 {
+    margin: 1rem 0;
+}
+
+.mobile  p {
+    color: #666;
+    line-height: 1.4rem;
 }
 
 /*==================
@@ -119,6 +221,16 @@ a {
     text-align: center;
 }
 
+.mobile #footer p {
+    color: #fff;
+}
+
 #footer p {
     margin: 0;
 }
+
+/*==================
+    Mobile Styles
+==================*/
+
+
