@@ -1,0 +1,124 @@
+﻿/*==================
+    Layout
+==================*/
+body, a {
+    font-family: "Lato", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    margin: 0 auto;
+    width: 960px;
+}
+
+/*==================
+    Heaader
+==================*/
+#branding {
+    padding: 1rem;
+    text-align: center;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+#navigation {
+    background-color: #263692;
+}
+
+#main-menu {
+    list-style: none;
+    text-align: center;
+}
+
+#main-menu li {
+    display: inline-block;
+}
+
+#main-menu li a {
+    color: #fff;
+    display: block;
+    padding: .5rem 2rem;
+}
+
+/*==================
+    Main
+==================*/
+#main {
+    margin-bottom: 3rem;
+}
+
+#banner {
+    border-bottom: 3px solid #eee;
+    position: relative;
+    top: -16px;
+}
+
+#banner img {
+    width: 100%;
+}
+
+.banner-content {
+    background-color: rgba(242, 103, 34, .8);        
+    color: #fff;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 33%;
+}
+
+.banner-content h2, .banner-content p {
+    padding: 0 2rem;
+}
+
+#content {
+    float: left;
+    width: 66%;
+}
+
+#content h2 {
+    color: #F26722;
+}
+
+#content p {
+    padding-right: 1.5rem;
+}
+
+#sidebar {
+    background-color: #263692;
+    float: left;
+    width: 33%;
+}
+
+#sidebar a {
+    color: #F26722;
+    float: right;
+    margin-bottom: 1em;
+}
+
+#news {
+    color: #fff;
+    padding: 0 1em;
+}
+
+/*==================
+    Footer
+==================*/
+#footer {
+    background-color: #666;
+    color: #fff;
+    clear: both;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+#footer p {
+    margin: 0;
+}
