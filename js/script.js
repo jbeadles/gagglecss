@@ -11,26 +11,39 @@
             }
         });
 
-        // Set class on body for window width <= 480px
-        var W = window.innerWidth || $(window).width(),
-            page = $(".page");
-
-        // Set on initial load
-        checkWidthAndAddMobileClass(W);
-
+        // Window resize events
         $(window).on("resize", function () {
-            W = $(window).width();
+            W = window.innerWidth || $(window).width();
             checkWidthAndAddMobileClass(W);
+            stickyFooter();
         });
 
-        function checkWidthAndAddMobileClass(width) {
-            if (width <= 480) {
-                page.addClass("mobile");
+        // Functions
+        function checkWidthAndAddMobileClass() {
+            var W = window.innerWidth || $(window).width(),
+                $page = $(".page");
+
+            if (W <= 480) {
+                $page.addClass("mobile");
             }
 
-            if (width > 480 && page.hasClass("mobile")) {
-                page.removeClass("mobile");
+            if (W > 480 && $page.hasClass("mobile")) {
+                $page.removeClass("mobile");
             }
         };
+
+        function stickyFooter() {
+            if ($(".page").hasClass("mobile")) { return false; }
+
+            var footerHeight = $("#footer").outerHeight(),
+                push = $(".push").height(footerHeight);
+
+            $(".page").css({ "marginBottom": "-" + footerHeight + "px" });
+        }
+
+        // Initalizations
+        checkWidthAndAddMobileClass();
+        stickyFooter();
+
   });
 })(jQuery);
